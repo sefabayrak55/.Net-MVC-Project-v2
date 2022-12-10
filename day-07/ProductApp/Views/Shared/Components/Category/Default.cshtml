@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Category>
+
+<div class="list-group">
+    @foreach (Category cat in Model)
+    {
+            <a class="list-group-item list-group-item-action" asp-action="GetAllProductsByCategoryId"
+           asp-route-id="@cat.CategoryId">
+                @cat.CategoryName
+            </a>
+    }
+</div>
