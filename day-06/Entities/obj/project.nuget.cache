@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "maSzIOHz1kxTekjm0Ih94X3NGjFVkpVbO48mJKuuWCRNRG102OTiHa/xfjt8RK23REK8C9/UXNK3+kSyMUqTZQ==",
+  "dgSpecHash": "SZ0ft1ooVROa5/r2KEIIh7Vy76DfdX0b94U0t/hxws8cd4tSUPSXFlPr0aejcH2Q0uj57FPPuJmUYLYkfTf/EQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bayraksefa\\Desktop\\dotnetmvcbootcamp-master\\day-06\\Entities\\Entities.csproj",
+  "projectFilePath": "D:\\dotnetmvcbootcamp\\day-06\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

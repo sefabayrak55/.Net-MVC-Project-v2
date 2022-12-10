@@ -1,6 +1,33 @@
 ﻿@model List<Product>
 
-<div class="row">
+    <div class="row">
+        <div class="col-md-3">
+
+           <form
+                method="get"
+                asp-action="Index"
+           >
+               <div class="form-group my-3">
+                   <input class="form-control" name="MinPrice" placeholder="Min. price" />
+               </div>
+               
+               <div class="form-group my-3">
+                   <input class="form-control" name = "MaxPrice" placeholder="Max. price" />
+               </div>
+
+               <div class="form-group my-3">
+                   <input class="form-control" name="SearchTerm" placeholder="Search Term" />
+               </div>
+               
+               <div class="form-group my-3">
+                   <button type="submit" class="btn-primary btn">Apply</button>
+               </div>
+           </form>
+
+
+        </div>
+        <div class="col-md-9">
+            <div class="row">
     @foreach (var prd in Model)
     {
        <div class="col-md-4 my-2">
@@ -45,4 +72,8 @@
        </div>
     }
 </div>
+        </div>
+    </div>
+
+
 
