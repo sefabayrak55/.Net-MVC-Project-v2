@@ -21,7 +21,7 @@ namespace ProductApp.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var products = _manager.ProductService.GetAllProducts();
+            var products = _manager.ProductService.GetAllProductsWithDetails();
             TempData["info"] = "Products have been listed.";
             return View(products);
         }

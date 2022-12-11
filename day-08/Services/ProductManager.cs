@@ -54,6 +54,11 @@ namespace Services
             return _manager.Product.GetAllProductsByCategoryId(id);
         }
 
+        public IEnumerable<Product> GetAllProductsWithDetails()
+        {
+            return _manager.Product.GetAllProductsWithDetail();
+        }
+
         public Product GetOneProductById(int id)
         {
             var product = _manager.Product.GetOneProductById(id);

@@ -1,5 +1,6 @@
 ﻿using Entities.Models;
 using Entities.RequestParameters;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using Repositories.EFCore.Extensions;
 using System;
@@ -34,6 +35,11 @@ namespace Repositories.EFCore
             return _context.Products
                 .Where(p => p.CategoryId.Equals(categoryId))
                 .ToList();
+        }
+
+        public IEnumerable<Product> GetAllProductsWithDetail()
+        {
+            return _context.Products.Include(p => p.Category).ToList(); 
         }
 
         public Product GetOneProductById(int id)

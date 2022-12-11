@@ -12,6 +12,9 @@ namespace Services.Contracts
     public interface IProductService
     {
         IEnumerable<Product> GetAllProducts();
+
+        IEnumerable<Product> GetAllProductsWithDetails();
+
         Product GetOneProductById(int id);
         IEnumerable<Product> GetAllProducts(ProductRequestParameters p);
         IEnumerable<Product> GetAllProductsByCategoryId(int id);
@@ -22,5 +25,6 @@ namespace Services.Contracts
 
         void UpdateForOneProduct(ProductForUpdateDto productDto);
         void DeleteOneProduct(int id);
+
     }
 }
