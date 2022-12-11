@@ -99,7 +99,7 @@ namespace ProductApp.Migrations
                         new
                         {
                             Id = 1,
-                            AtCreated = new DateTime(2022, 12, 11, 14, 49, 23, 340, DateTimeKind.Local).AddTicks(7740),
+                            AtCreated = new DateTime(2022, 12, 11, 15, 4, 35, 557, DateTimeKind.Local).AddTicks(4782),
                             CategoryId = 1,
                             Description = "HP Laptop Touch your Dreams",
                             ImageUrl = "/images/products/1.jpg",
@@ -109,7 +109,7 @@ namespace ProductApp.Migrations
                         new
                         {
                             Id = 2,
-                            AtCreated = new DateTime(2022, 12, 11, 14, 49, 23, 340, DateTimeKind.Local).AddTicks(7763),
+                            AtCreated = new DateTime(2022, 12, 11, 15, 4, 35, 557, DateTimeKind.Local).AddTicks(4804),
                             CategoryId = 2,
                             Description = "Airpods for your ears",
                             ImageUrl = "/images/products/2.jpg",
@@ -119,7 +119,7 @@ namespace ProductApp.Migrations
                         new
                         {
                             Id = 3,
-                            AtCreated = new DateTime(2022, 12, 11, 14, 49, 23, 340, DateTimeKind.Local).AddTicks(7883),
+                            AtCreated = new DateTime(2022, 12, 11, 15, 4, 35, 557, DateTimeKind.Local).AddTicks(4806),
                             CategoryId = 3,
                             Price = 7000m,
                             ProductName = "Samsun Galaxy Note FE"

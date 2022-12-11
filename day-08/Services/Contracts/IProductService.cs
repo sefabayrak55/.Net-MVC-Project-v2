@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.DataTransferObjects;
+using Entities.Models;
 using Entities.RequestParameters;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,12 @@ namespace Services.Contracts
         Product GetOneProductById(int id);
         IEnumerable<Product> GetAllProducts(ProductRequestParameters p);
         IEnumerable<Product> GetAllProductsByCategoryId(int id);
+
+        Product CreateOneProduct(ProductForInsertionDto productDto);
+
+        ProductForUpdateDto GetOneProductForUpdate(int id);
+
+        void UpdateForOneProduct(ProductForUpdateDto productDto);
+        void DeleteOneProduct(int id);
     }
 }

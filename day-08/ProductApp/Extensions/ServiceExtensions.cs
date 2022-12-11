@@ -28,7 +28,7 @@ namespace ProductApp.Extensions
         {
             services.AddScoped<IServiceManager, ServiceManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
-            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductService, ProductManager>();
         }
     }
 }

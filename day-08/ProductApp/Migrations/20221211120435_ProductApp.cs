@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProductApp.Migrations
 {
-    public partial class init : Migration
+    public partial class ProductApp : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -64,17 +64,17 @@ namespace ProductApp.Migrations
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "Id", "AtCreated", "CategoryId", "Description", "ImageUrl", "Price", "ProductName" },
-                values: new object[] { 1, new DateTime(2022, 12, 11, 14, 49, 0, 944, DateTimeKind.Local).AddTicks(9213), 1, "HP Laptop Touch your Dreams", "/images/products/1.jpg", 15000m, "HP Z Book" });
+                values: new object[] { 1, new DateTime(2022, 12, 11, 15, 4, 35, 557, DateTimeKind.Local).AddTicks(4782), 1, "HP Laptop Touch your Dreams", "/images/products/1.jpg", 15000m, "HP Z Book" });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "Id", "AtCreated", "CategoryId", "Description", "ImageUrl", "Price", "ProductName" },
-                values: new object[] { 2, new DateTime(2022, 12, 11, 14, 49, 0, 944, DateTimeKind.Local).AddTicks(9235), 2, "Airpods for your ears", "/images/products/2.jpg", 5000m, "AirPods" });
+                values: new object[] { 2, new DateTime(2022, 12, 11, 15, 4, 35, 557, DateTimeKind.Local).AddTicks(4804), 2, "Airpods for your ears", "/images/products/2.jpg", 5000m, "AirPods" });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "Id", "AtCreated", "CategoryId", "Price", "ProductName" },
-                values: new object[] { 3, new DateTime(2022, 12, 11, 14, 49, 0, 944, DateTimeKind.Local).AddTicks(9237), 3, 7000m, "Samsun Galaxy Note FE" });
+                values: new object[] { 3, new DateTime(2022, 12, 11, 15, 4, 35, 557, DateTimeKind.Local).AddTicks(4806), 3, 7000m, "Samsun Galaxy Note FE" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_CategoryId",

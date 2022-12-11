@@ -1,8 +1,3 @@
-C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
-C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
-C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
-C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\bin\Debug\net6.0\Services.deps.json
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\bin\Debug\net6.0\Services.dll
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\bin\Debug\net6.0\Services.pdb
@@ -10,6 +5,11 @@ C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\bin\Debug\n
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\bin\Debug\net6.0\Repositories.dll
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\bin\Debug\net6.0\Entities.pdb
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\bin\Debug\net6.0\Repositories.pdb
+C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\Services.dll
 C:\Users\bayraksefa\Desktop\dotnetmvcbootcamp-master\day-08\Services\obj\Debug\net6.0\refint\Services.dll
