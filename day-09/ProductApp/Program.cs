@@ -15,6 +15,8 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.RegisterRepositories();
 builder.Services.RegisterServices();
 
+builder.Services.ConfigureIdentity();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,6 +32,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseEndpoints(endpoints=>
