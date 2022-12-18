@@ -31,15 +31,15 @@ namespace ProductApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login([FromForm] LoginDto model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByNameAsync(model.UserName);
-                if(user is not null)
+                if (user is not null)
                 {
                     await _signInManager.SignOutAsync();
                     var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
 
-                    if(result.Succeeded)
+                    if (result.Succeeded)
                     {
                         return RedirectToAction("Index", "Product");
                     }
@@ -52,6 +52,16 @@ namespace ProductApp.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+
+            return RedirectToAction("Index","Home");
+        }
+
+
+
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -63,7 +73,7 @@ namespace ProductApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromForm] RegisterDto model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var applicationUser = new ApplicationUser()
                 {
@@ -75,9 +85,13 @@ namespace ProductApp.Controllers
 
                 var result = await _userManager.CreateAsync(applicationUser, model.Password);
 
-                if(result.Succeeded)
+                if (result.Succeeded)
                 {
-                    return RedirectToAction("Login");
+                    var rolResult = await _userManager.AddToRoleAsync(applicationUser, "User");
+                    if(rolResult.Succeeded)
+                    {
+                        return RedirectToAction("Login");
+                    }
                 }
                 else
                 {

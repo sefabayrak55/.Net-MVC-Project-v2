@@ -17,6 +17,8 @@ builder.Services.RegisterServices();
 
 builder.Services.ConfigureIdentity();
 
+builder.Services.ConfigureApplicationCookie();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

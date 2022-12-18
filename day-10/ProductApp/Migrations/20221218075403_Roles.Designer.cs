@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Repositories.EFCore;
 
@@ -11,9 +12,10 @@ using Repositories.EFCore;
 namespace ProductApp.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    partial class RepositoryContextModelSnapshot : ModelSnapshot
+    [Migration("20221218075403_Roles")]
+    partial class Roles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -170,7 +172,7 @@ namespace ProductApp.Migrations
                         new
                         {
                             Id = 1,
-                            AtCreated = new DateTime(2022, 12, 18, 10, 57, 40, 748, DateTimeKind.Local).AddTicks(9583),
+                            AtCreated = new DateTime(2022, 12, 18, 10, 54, 2, 567, DateTimeKind.Local).AddTicks(3502),
                             CategoryId = 1,
                             Description = "HP Laptop Touch your Dreams",
                             ImageUrl = "/images/products/1.jpg",
@@ -180,7 +182,7 @@ namespace ProductApp.Migrations
                         new
                         {
                             Id = 2,
-                            AtCreated = new DateTime(2022, 12, 18, 10, 57, 40, 748, DateTimeKind.Local).AddTicks(9632),
+                            AtCreated = new DateTime(2022, 12, 18, 10, 54, 2, 567, DateTimeKind.Local).AddTicks(3521),
                             CategoryId = 2,
                             Description = "Airpods for your ears",
                             ImageUrl = "/images/products/2.jpg",
@@ -190,7 +192,7 @@ namespace ProductApp.Migrations
                         new
                         {
                             Id = 3,
-                            AtCreated = new DateTime(2022, 12, 18, 10, 57, 40, 748, DateTimeKind.Local).AddTicks(9635),
+                            AtCreated = new DateTime(2022, 12, 18, 10, 54, 2, 567, DateTimeKind.Local).AddTicks(3524),
                             CategoryId = 3,
                             Price = 7000m,
                             ProductName = "Samsun Galaxy Note FE"
@@ -226,22 +228,22 @@ namespace ProductApp.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "9f02d1d4-60fe-432e-bbe4-34bf3744d13a",
-                            ConcurrencyStamp = "23f13b6a-d14d-41c0-8d7d-0471a3157c5f",
+                            Id = "74671d28-7b65-4358-8f34-174bd61c311e",
+                            ConcurrencyStamp = "06f869b8-89f2-4a5f-ac7f-0d4e5e8568a3",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "397bf556-7d95-4e1b-8694-73092c128309",
-                            ConcurrencyStamp = "4f07c239-66cc-4867-9a50-e0758060096d",
+                            Id = "39d2bd15-675c-4326-a242-ffb234ee9347",
+                            ConcurrencyStamp = "ab28623a-692f-4fc3-bfe1-af2c49b4682e",
                             Name = "Editor",
                             NormalizedName = "EDITOR"
                         },
                         new
                         {
-                            Id = "1d7c0f71-6683-42cd-8ab1-ee978b8c3b39",
-                            ConcurrencyStamp = "8d2de7b6-5e36-4570-8c4e-1daaed940e5e",
+                            Id = "3b08e94f-b86e-40d7-867e-5024bb5579d0",
+                            ConcurrencyStamp = "f34523a3-9094-489f-a9e4-f6dc79a90898",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
