@@ -81,6 +81,18 @@
       "PackagePath": "staticwebassets\\images\\products\\9.jpg"
     },
     {
+      "Id": "C:\\Users\\bayraksefa\\Desktop\\dotnetmvcbootcamp-master\\day-10\\ProductApp\\wwwroot\\images\\slider\\slider-1.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bayraksefa\\Desktop\\dotnetmvcbootcamp-master\\day-10\\ProductApp\\wwwroot\\images\\slider\\slider-2.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\slider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bayraksefa\\Desktop\\dotnetmvcbootcamp-master\\day-10\\ProductApp\\wwwroot\\images\\slider\\slider-3.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\slider-3.jpg"
+    },
+    {
       "Id": "C:\\Users\\bayraksefa\\Desktop\\dotnetmvcbootcamp-master\\day-10\\ProductApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

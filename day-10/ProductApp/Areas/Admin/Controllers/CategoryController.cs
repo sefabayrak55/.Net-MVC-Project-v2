@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repositories.Contracts;
 using Repositories.EFCore;
@@ -7,6 +8,7 @@ using Services.Contracts;
 namespace ProductApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin, Editor")]
     public class CategoryController : Controller
     {
         private readonly IServiceManager _manager;

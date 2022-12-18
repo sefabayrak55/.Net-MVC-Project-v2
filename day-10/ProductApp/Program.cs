@@ -17,7 +17,7 @@ builder.Services.RegisterServices();
 
 builder.Services.ConfigureIdentity();
 
-builder.Services.ConfigureApplicationCookie();
+builder.Services.ConfigureApplicationCookie(); 
 
 var app = builder.Build();
 

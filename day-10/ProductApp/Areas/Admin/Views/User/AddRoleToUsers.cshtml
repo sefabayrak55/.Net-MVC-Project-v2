@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model ApplicationUser
+@inject UserManager<ApplicationUser> UserManager
+
+<h1>User Roles</h1>
+<div style="text-align:right">
+    <form method="post" asp-action="AddRoleToUsers">
+        <input type="hidden" name="userName" value="@Model.UserName" />
+        <select class="form-select my-1" name="role" aria-label="Default select example" asp-items="@ViewBag.Roles">
+        </select>
+        <button type="submit" class="btn btn-outline-success my-3">Add Role</button>
+    </form>
+</div>
+<ul class="list-group">
+    @foreach (IdentityRole role in ViewBag.RoleList)
+    {
+        <li class="list-group-item">
+            @role.Name -
+            @await UserManager.IsInRoleAsync(Model,role.Name)
+        </li>
+    }
+</ul>
